@@ -1,6 +1,6 @@
 # Nintendo Switch Controller Mapper
 
-A simple utility to map Nintendo Switch Controller inputs to keyboard commands and mouse scrolling. I use it as a more ergonomic way to read through documents and emails that don't require much typing.
+A simple utility to map Nintendo Switch controller inputs to keyboard commands and mouse scrolling. I use it as a more ergonomic way to read through documents and emails that don't require much typing.
 
 Works with either a Pro Controller or a Joy-Con pair.
 
