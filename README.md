@@ -18,3 +18,9 @@ Works with either a Pro Controller or a Joy-Con pair.
 
 ### Joysticks
 - Left Stick Up/Down: Mouse scroll (pushing up scrolls up, pushing down scrolls down)
+- Right Stick: Mouse movement (move the cursor around the screen)
+
+### Other Buttons
+- R: Left mouse click
+- Right stick click: Right mouse click
+
