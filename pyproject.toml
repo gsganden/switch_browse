@@ -1,0 +1,10 @@
+[project]
+name = "switch_browse"
+version = "0.1.0"
+description = "Use a Nintendo Switch controller for basic browsing controls"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pynput",
+    "pygame",
+]
