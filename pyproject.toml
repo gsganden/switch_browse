@@ -8,3 +8,8 @@ dependencies = [
     "pynput",
     "pygame",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+]

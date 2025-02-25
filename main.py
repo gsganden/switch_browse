@@ -17,11 +17,12 @@ BUTTON_MAPPING = {
     1: "E",  # B
     # 2: "J", # X
     # 3: "A", # Y
-    11: Key.up, # Up button
-    12: Key.down, # Down button
-    13: Key.page_up, # Right button
-    14: Key.page_down, # Left button
+    11: Key.up,  # Up button
+    12: Key.down,  # Down button
+    13: Key.page_up,  # Right button
+    14: Key.page_down,  # Left button
 }
+
 
 def get_joystick():
     """Detect and return the first connected joystick."""
@@ -32,6 +33,7 @@ def get_joystick():
     joystick.init()
     print(f"Connected to {joystick.get_name()}")
     return joystick
+
 
 def main():
     joystick = get_joystick()
@@ -47,7 +49,9 @@ def main():
             pygame.event.pump()
 
             # Handle buttons
-            for button in range(joystick.get_numbuttons()):  # Check all possible buttons
+            for button in range(
+                joystick.get_numbuttons()
+            ):  # Check all possible buttons
                 if joystick.get_button(button):
                     print(f"Button {button} pressed")  # Debug print for button presses
 
@@ -63,7 +67,9 @@ def main():
                         pressed_keys.remove(key)
 
             # Handle left stick scrolling
-            y_axis = -joystick.get_axis(1)  # Left stick Y-axis (negated to reverse direction)
+            y_axis = -joystick.get_axis(
+                1
+            )  # Left stick Y-axis (negated to reverse direction)
             if abs(y_axis) > DEADZONE:
                 # Subtract deadzone to make movement smoother
                 adjusted_y = y_axis - (DEADZONE if y_axis > 0 else -DEADZONE)
@@ -76,6 +82,7 @@ def main():
         print("Exiting program.")
     finally:
         pygame.quit()
+
 
 if __name__ == "__main__":
     main()
