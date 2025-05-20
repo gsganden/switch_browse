@@ -1,3 +1,7 @@
+<a href="https://www.hannahilea.com/blog/houseplant-programming">
+  <img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%AA%B4%20Houseplant%20-x?style=flat&amp;label=Project%20type&amp;color=1E1E1D">
+</a>
+
 # Nintendo Switch Controller Mapper
 
 A simple utility to map Nintendo Switch controller inputs to keyboard commands and mouse scrolling. I use it as a more ergonomic way to read through documents and emails that don't require much typing.
